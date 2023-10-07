@@ -73,3 +73,5 @@ Before running the project, make sure you have the following installed:
 - This is a open source project, users can contribute according to open source guidelines.
 
 ![Alt text](Bot.png)
+
+<img src="./Bot.png" alt="Admin Panel" title="Admin Panel">
