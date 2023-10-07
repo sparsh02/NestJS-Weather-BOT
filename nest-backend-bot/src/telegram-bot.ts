@@ -47,13 +47,22 @@ export class TelegramBotService {
 
   private registerCommands() {
     console.log("hello");
-    
+
+    this.bot.onText(/\/start/, async(msg)=>{
+      console.log("Hello");
+      const chatId = msg.chat.id;
+      const first_name = msg.from.first_name
+
+      this.bot.sendMessage(chatId, `Hi ${first_name}, welcome to the weather bot, you can subscribe by using the /subscribe command, and unsubscribe using /unsubscribe command}`)
+      
+
+    })
     this.bot.onText(/\/subscribe/, async (msg) => {
       console.log(msg);
       
       const chatId = msg.chat.id;
       const userId = msg.from.id;
-      const username = msg.from.username;
+      const username = msg.from.first_name;
   
       const existingUser = await this.userService.getUserByChatId(chatId);
       console.log(existingUser);
