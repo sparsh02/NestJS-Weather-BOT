@@ -70,8 +70,9 @@ Before running the project, make sure you have the following installed:
     - Create a pull request.
     
 ## Licence
+
 - This is a open source project, users can contribute according to open source guidelines.
 
-![Alt text](Bot.png)
 
-<img src="./Bot.png" alt="Admin Panel" title="Admin Panel">
+
+![Bot](https://github.com/sparsh02/NestJS-Weather-BOT/assets/54232718/8af0882d-cec0-4b74-ad23-2c6f0782c339)
